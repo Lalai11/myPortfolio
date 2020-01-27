@@ -407,6 +407,9 @@ button span:hover {
 
 /* Projects description */
 .content {
+  background-color: #eeeeee;
+}
+.content-row {
   max-width: 320px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -418,12 +421,41 @@ button span:hover {
   margin: auto;
 }
 
-.img-overflow {
-  height: 250px;
+.desktop-mockup {
+  background: url(images/computer.svg) center no-repeat;
+  padding-top: 12px;
+  width: 100%;
+  height: 224px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.mobile-mockup {
+  background: url(images/phone.svg) center no-repeat;
+  padding-top: 10px;
+  width: 100%;
+  height: 224px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.desk-img-overflow {
+  height: 149px;
   overflow-y: scroll;
-  margin-top: 15px;
-  border: 2px solid #ccc;
-  background: #f0f0f0;
+  width: 88%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.mob-img-overflow {
+  height: 206px;
+  overflow-y: scroll;
+  width: 35%;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 7px;
 }
 
 .content-col {
@@ -431,6 +463,34 @@ button span:hover {
   -ms-flex: 1;
   flex: 1;
   padding: 20px 20px;
+}
+
+.content-col p {
+  color: #707070;
+  line-height: 22px;
+}
+
+.content-col h3,
+h2 {
+  color: #6d96c3;
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.content-col ul {
+  margin-left: 20px;
+  list-style: none;
+  color: #707070;
+}
+
+.content-col li {
+  line-height: 22px;
+}
+
+.content-col li::before {
+  color: #ac8bad;
+  content: "> ";
 }
 
 .content-col img,
@@ -612,9 +672,6 @@ li.show-in-mobile {
     width: 100%;
   }
 
-  .content {
-    margin-bottom: 60px;
-  }
   /*Presentation text*/
 
   h1 {
@@ -804,8 +861,8 @@ li.show-in-mobile {
   }
 
   /* Projects description */
-  .content {
-    max-width: 960px;
+  .content-row {
+    min-width: 960px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -813,13 +870,44 @@ li.show-in-mobile {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    align-items: center;
     margin: auto;
   }
 
-  .img-overflow {
+  .desktop-mockup {
+    padding-top: 44px;
+    width: 100%;
     height: 400px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
   }
 
+  .mobile-mockup {
+    padding-top: 14px;
+    width: 100%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+  }
+
+  .desk-img-overflow {
+    height: 233px;
+    overflow-y: scroll;
+    width: 88%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .mob-img-overflow {
+    height: 323px;
+    overflow-y: scroll;
+    width: 34%;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 13px;
+  }
   /*Footer*/
   footer {
     background-color: #ac8bad;
