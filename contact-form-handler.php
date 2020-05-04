@@ -5,10 +5,9 @@ $message = $_POST['txtComment'];
 $errors = '';
 $myemail = 'laizeferraz@gmail.com';
 
-if(empty($name]) ||
+if(empty($name) ||
    empty($emailAddress)) {
-     echo "Error: Name and Email are required."
-     exit;
+     echo "Error: Name and Email are required.";
    }
 
    if(!preg_match(
