@@ -408,6 +408,7 @@ button span:hover {
 /* Projects description */
 .content {
   background-color: #eeeeee;
+  flex: 1;
 }
 .content-row {
   max-width: 320px;
@@ -540,10 +541,18 @@ h2 {
   justify-content: center;
 }
 
+.return-button {
+  margin: 10px 10px;
+  text-align: right;
+}
+.return-button button {
+  background-color: #ac8bad;
+}
+
 /* Start footer*/
 footer {
   background-color: #ac8bad;
-  height: 95px;
+  padding: 10px 10px;
 }
 
 .footer-row {
@@ -569,8 +578,8 @@ footer {
 /* Logo size */
 .logo-mobile-size svg {
   fill: #ffffff;
-  width: 80px;
   height: 49px;
+  width: auto;
 }
 
 path {
@@ -590,11 +599,6 @@ li.show-in-mobile {
 .nav-footer-mobile a {
   color: #ffffff;
   font-size: 12px;
-}
-
-.footer-margin {
-  margin: 0 15px 0 10px;
-  padding: 10px 0;
 }
 
 /*social media resizing*/
@@ -909,10 +913,6 @@ li.show-in-mobile {
     border-radius: 13px;
   }
   /*Footer*/
-  footer {
-    background-color: #ac8bad;
-    height: 168px;
-  }
 
   .footer-row {
     display: -webkit-box;
@@ -928,10 +928,6 @@ li.show-in-mobile {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-  }
-
-  .footer-col {
-    text-align: center;
   }
 
   /* navigation color */
@@ -956,27 +952,24 @@ li.show-in-mobile {
     color: #ffffff;
   }
 
-  .footer-margin {
-    margin: 0px 30px;
-    padding: 20px 0;
+  /* font size menu */
+  footer .navigation a {
+    font-size: 14px;
   }
 
   /* logo footer */
   .logo-mobile-size svg {
-    width: 150px;
-    height: 100px;
+    height: 80px;
   }
 
   /*social media resizing*/
   .social svg {
-    width: 54px;
-    height: 56px;
+    width: 44px;
+    height: 46px;
     margin-left: 20px;
   }
 
   .footer-text {
-    text-align: center;
-    color: #ffffff;
     font-size: 12px;
   }
 }
