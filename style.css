@@ -306,6 +306,7 @@ h1 {
   width: 100%;
   font-size: 14px;
   height: 40px;
+  padding: 10px;
 }
 
 .form-col p {
@@ -325,6 +326,8 @@ textarea {
 
 textarea {
   height: 200px;
+  font-size: 14px;
+  padding: 10px;
 }
 
 button {
@@ -339,8 +342,15 @@ button {
 button span:hover {
   border-bottom: 2px solid #ffffff;
 }
+/* Error message */
+.error {
+  color: #c66;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+/* End contact page */
 
-/* Projects */
+/* Start projects page */
 .main-content-row {
   max-width: 300px;
   display: -webkit-box;
@@ -358,9 +368,9 @@ button span:hover {
 .col {
   margin: 15px 0;
 }
+/* End projects page */
 
-/* Privacy */
-
+/* Start privacy page */
 .heading-color p {
   text-align: center;
   color: #ffffff;
@@ -404,8 +414,9 @@ button span:hover {
 .main-content-privacy span:hover {
   border-bottom: 2px solid #dd95bc;
 }
+/* End privacy page */
 
-/* Projects description */
+/* Start projects description pages */
 .content {
   background-color: #eeeeee;
   flex: 1;
@@ -442,6 +453,14 @@ button span:hover {
   margin-bottom: 20px;
 }
 
+.tablet-mockup {
+  background: url(images/tablet.svg) center no-repeat;
+  width: 100%;
+  height: 224px;
+  position: relative;
+  padding-top: 49px;
+}
+
 .desk-img-overflow {
   height: 149px;
   overflow-y: scroll;
@@ -451,12 +470,22 @@ button span:hover {
 }
 
 .mob-img-overflow {
-  height: 206px;
+  height: 203px;
   overflow-y: scroll;
   width: 35%;
   margin: 0 auto;
   position: relative;
   border-radius: 7px;
+}
+
+.tablet-screen {
+  position: absolute;
+  top: 3px;
+  left: 11px;
+  width: 258px;
+  height: 200px;
+  cursor: pointer;
+  border-radius: 2px;
 }
 
 .content-col {
@@ -471,6 +500,10 @@ button span:hover {
   line-height: 22px;
 }
 
+small {
+  color: #707070;
+}
+
 .content-col h3,
 h2 {
   color: #6d96c3;
@@ -479,17 +512,17 @@ h2 {
   font-weight: normal;
 }
 
-.content-col ul {
+.arrow-list {
   margin-left: 20px;
   list-style: none;
   color: #707070;
 }
 
-.content-col li {
+.arrow-list li {
   line-height: 22px;
 }
 
-.content-col li::before {
+.arrow-list li::before {
   color: #ac8bad;
   content: "> ";
 }
@@ -522,25 +555,6 @@ h2 {
   font-size: 22px;
 }
 
-.ad-center {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 .return-button {
   margin: 10px 10px;
   text-align: right;
@@ -548,6 +562,54 @@ h2 {
 .return-button button {
   background-color: #ac8bad;
 }
+/* End projects page */
+
+/* Start tablet slideshow - Sunnyspot project description page*/
+.slick-plugin {
+  position: absolute;
+  width: 260px;
+  height: 100%;
+}
+
+.slick-plugin img {
+  width: 260px;
+  height: 165px;
+}
+#slideshow {
+  display: block;
+  margin-top: 28px;
+  max-width: 440px;
+}
+
+#slideshow .slick-dots li button:before,
+#slideshow .slick-dots li .slick-active button:before {
+  color: #fff;
+}
+
+#slideshow .slick-dots {
+  bottom: 16px;
+}
+
+#slideshow .slick-prev,
+#slideshow .slick-next {
+  z-index: 2;
+  top: 87%;
+}
+
+#slideshow .slick-prev::before,
+#slideshow .slick-next::before {
+  font-size: 12px;
+}
+
+#slideshow .slick-prev {
+  left: 0;
+}
+
+#slideshow .slick-next {
+  right: 0;
+}
+
+/* End Sunnyspot project description page */
 
 /* Start footer*/
 footer {
@@ -615,6 +677,7 @@ li.show-in-mobile {
 }
 
 @media only screen and (min-width: 960px) {
+  /* Start header */
   .header-flex {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -663,26 +726,23 @@ li.show-in-mobile {
   .navigation a:hover span {
     border-bottom: 2px solid #ac8bad;
   }
+  /* End header */
 
-  /*background image and layer*/
+  /* Start main content - homepage */
   .background {
-    /* height: 100vh; */
     margin-top: 0;
   }
 
-  /* main content */
   .main-content {
     max-width: 960px;
     width: 100%;
   }
 
-  /*Presentation text*/
-
   h1 {
     font-size: 80px;
   }
 
-  /* Start call to action - home page */
+  /* Start call to action - homepage */
   .button-wrapper {
     width: 200px;
     height: 50px;
@@ -777,13 +837,16 @@ li.show-in-mobile {
   .button-wrapper:hover .prt {
     opacity: 1;
   }
+  /* End call to action button homepage */
+  /* End homepage main content */
 
-  /* White line */
+  /* White line - homepage */
   .white-line {
     height: 15px;
   }
+  /* End white line - homepage */
 
-  /* Contact page */
+  /* Start contact page */
   .heading-color h1 {
     font-size: 30px;
     margin-top: 0;
@@ -834,8 +897,9 @@ li.show-in-mobile {
     font-size: 16px;
     width: 150px;
   }
+  /* End contact page */
 
-  /* Projects */
+  /* Start projects page */
   .main-content-row {
     max-width: 960px;
     display: -webkit-box;
@@ -855,16 +919,18 @@ li.show-in-mobile {
   .col {
     margin: 15px 0;
   }
+  /* End projects page */
 
-  /* Privacy */
+  /* Start privacy page */
   .main-content-privacy {
     display: block;
     width: 960px;
     height: auto;
     margin: 10px auto;
   }
+  /* End privacy page */
 
-  /* Projects description */
+  /* Start projects description pages */
   .content-row {
     min-width: 960px;
     display: -webkit-box;
@@ -882,38 +948,63 @@ li.show-in-mobile {
     padding-top: 44px;
     width: 100%;
     height: 400px;
-    position: relative;
-    overflow: hidden;
-    margin: auto;
+  }
+
+  .tablet-mockup {
+    height: 250px;
+    margin-top: 100px;
   }
 
   .mobile-mockup {
     padding-top: 14px;
     width: 100%;
     height: 350px;
-    position: relative;
-    overflow: hidden;
-    margin: auto;
   }
 
   .desk-img-overflow {
     height: 233px;
-    overflow-y: scroll;
     width: 88%;
     margin: 0 auto;
-    position: relative;
   }
 
   .mob-img-overflow {
     height: 323px;
-    overflow-y: scroll;
     width: 34%;
-    margin: 0 auto;
-    position: relative;
-    border-radius: 13px;
   }
-  /*Footer*/
 
+  .tablet-screen {
+    top: -3px;
+    left: 62px;
+    width: 319px;
+    height: 200px;
+  }
+  /* End projects description pages */
+
+  /* Start tablet slideshow - sunnyspot page */
+  .slick-plugin {
+    width: 319px;
+  }
+
+  .slick-plugin img {
+    height: 200px;
+    width: 319px;
+  }
+
+  #slideshow .slick-prev,
+  #slideshow .slick-next {
+    top: 107%;
+  }
+
+  #slideshow .slick-dots {
+    bottom: -25px;
+  }
+
+  .content-col-margin {
+    margin-top: 50px;
+  }
+  /* End tablet slideshow -  sunnyspot page */
+
+  /*Start footer*/
   .footer-row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -972,4 +1063,6 @@ li.show-in-mobile {
   .footer-text {
     font-size: 12px;
   }
+  /* End footer */
 }
+/* End media query desktop */
