@@ -53,15 +53,17 @@
           method="POST"
           action="contact-form-handler.php"
           name="contact-form"
-          class="form-row"
+          class="form-row error"
+          id="contact-form"
         >
+          <div class="error" id="error-area"></div>
           <div class="form-col">
             <label for="txtName">Name*</label>
-            <input type="text" id="txtName" name="txtName" />
+            <input type="text" id="txtName" name="txtName" required autofocus />
           </div>
           <div class="form-col">
             <label for="txtEmail">Email*</label>
-            <input type="email" id="txtEmail" name="txtEmail" />
+            <input type="email" id="txtEmail" name="txtEmail" required />
           </div>
           <div class="form-col">
             <p>Message</p>
@@ -176,5 +178,6 @@
         </div>
       </footer>
     </div>
+    <script type="text/javascript" src="app.js"></script>
   </body>
 </html>

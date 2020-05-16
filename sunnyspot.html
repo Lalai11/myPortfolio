@@ -9,6 +9,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <title>Laize Ferraz Portfolio</title>
   </head>
   <body>
@@ -52,39 +54,63 @@
           <div class="content-col">
             <div class="desktop-mockup">
               <div class="desk-img-overflow">
-                <img src="images/SunnyDesk615pxW.jpeg" alt="" />
+                <img src="images/SunnyspotPage/SunnyDesk615pxW.jpeg" alt="" />
               </div>
             </div>
           </div>
           <div class="content-col">
             <h2>Project Brief</h2>
             <p>
-              I was approched to develop a website based on the Photoshop file
-              provided by the client. The file contained all images, icons, logo
-              and two different homepage designs, one for Desktops(960px) and
-              another for Mobiles(320px).
+              SunnySpot Holidays is a rental service of cabins and
+              camping/caravan sites located in the Central Coast, NSW. Willing
+              to modernize their website and service, the owner approached us to
+              create a system to make the accommodation page more professional
+              and efficient.
             </p>
             <br />
             <p>
-              The client also required a system to provide content for the
-              website's accommodation page. It's content was generated using a
-              Word document image containing cabin's availability, descriptions
-              and prices.
+              The development of this project involved five stages in the
+              server-side and two steps on the client-side.
             </p>
+            <br />
+            <p>
+              To collect all server-side requirements, the client answered a
+              questionnaire. After two reports, we decided to develop the system
+              with a MySQL database and PHP as the server-side language. The
+              last two stages were to create the database and connect it to the
+              accommodation page using PHP. The goal was to make more accessible
+              and more secure the process of updating the accommodation page
+              content (price, photo, description, and availability).
+            </p>
+            <br />
+            <p>
+              Because the website has two different designs, one for mobile and
+              another for desktop, the client-side first step was to develop the
+              mobile version (Mobile First approach) based on the design
+              delivered by the client on a Photoshop file. The second and last
+              client-side step was to create the desktop version of the website.
+              We used HTML, CSS, and Javascript to develop both website
+              versions.
+            </p>
+            <br />
+            <small>
+              *Assessment project from the Certificate IV in Web-Based
+              Technologies at TAFE obtained in 2019.
+            </small>
           </div>
         </div>
         <div class="content-row">
           <div class="content-col">
             <div class="mobile-mockup">
               <div class="mob-img-overflow">
-                <img src="images/SunnyMob360pxW.jpg" alt="" />
+                <img src="images/SunnyspotPage/SunnyMob360pxW.jpg" alt="" />
               </div>
             </div>
           </div>
 
           <div class="content-col">
             <h3>Frontend approach:</h3>
-            <ul>
+            <ul class="arrow-list">
               <li>Mobile first UXDesign.</li>
               <li>HTML, CSS and JavaScript languages.</li>
               <li>
@@ -100,20 +126,22 @@
         </div>
         <div class="content-row">
           <div class="content-col">
-            <div class="mobile-mockup">
-              <div class="mob-img-overflow">
-                <img src="images/SunnyMob360pxW.jpg" alt="" />
+            <div class="tablet-mockup">
+              <div class="tablet-screen" id="slideshow">
+                <div class="slick-plugin">
+                  <div><img src="images/Slideshow/contactPage.png" /></div>
+                  <div><img src="images/Slideshow/LoginPage.png" /></div>
+                  <div><img src="images/Slideshow/OptionsCabin.png" /></div>
+                  <div><img src="images/Slideshow/AddCabin.png" /></div>
+                  <div><img src="images/Slideshow/UpdateCabin.png" /></div>
+                  <div><img src="images/Slideshow/DeleteCabin.png" /></div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="content-col">
+          <div class="content-col content-col-margin">
             <h3>Backend approach:</h3>
-            <p>
-              After a few reports and a questionnaire we concluded the best
-              course for this project was to create a database containing all
-              cabin's details and connect it with the accommodation page.
-            </p>
-            <ul>
+            <ul class="arrow-list">
               <li>MySQL database.</li>
               <li>PHP server-side language.</li>
             </ul>
@@ -217,5 +245,11 @@
         </div>
       </footer>
     </div>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
   </body>
 </html>
